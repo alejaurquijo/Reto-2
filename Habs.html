@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Hotel - Habitaciones</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/funHab.js"></script>
+    
+</head>
+<body>
+    <h1>Consulta Habitaciones</h1>
+    <div>
+        <table>
+            <tr>
+                <td>id</td>
+                <td>room</td>
+                <td>stars</td>
+                <td>category_id</td>
+                <td>description</td>
+            </tr>
+        </table>
+    </div>
+    <div id="resultado"></div>
+    <button onclick="consulta()">Consultar</button><br>
+    
+    <div>
+        <input type ="number" id="id" placeholder="id">
+        <input type="text" id="room" placeholder="room">
+        <input type="number" id="stars" placeholder="stars">
+        <input type="number" id="category_id" placeholder="category id">
+        <input type="text" id="description" placeholder="description">
+    </div>
+    <button onclick="guardarInfo()">Guardar Habitación</button>
+    <button onclick="editar()">Editar Habitación</button>
+    
+    <div>
+        <a href="index.html">Volver a inicio</a>
+    </div>
+</body>
+</html>
